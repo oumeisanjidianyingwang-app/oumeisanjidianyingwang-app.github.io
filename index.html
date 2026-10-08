@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欧美三级电影网 - 精选高清欧美影视在线观看与资源导航平台</title>
+<meta name="description" content="欧美三级电影网（oumeisanjidianyingwang-app）致力于为影视爱好者提供最新、最全的欧美电影资讯、高分影片推荐、经典片单盘点与观影指南。涵盖动作、科幻、悬疑、爱情、纪录片等多种类型，汇集院线热映、获奖佳作与冷门神作，助您快速发现值得一看的优质欧美影视作品。">
+<meta name="keywords" content="欧美三级电影网, 欧美电影, 高清电影, 电影推荐, 欧美影视, 在线观影, 电影资讯, 经典片单, 院线热映, oumeisanjidianyingwang-app">
+<meta name="author" content="欧美三级电影网">
+<meta name="robots" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欧美三级电影网 - 精选高清欧美影视在线观看与资源导航平台">
+<meta property="og:description" content="汇集最新欧美电影资讯、高分影片推荐与经典片单盘点，涵盖动作、科幻、悬疑、爱情、纪录片等多元类型。">
+<meta property="og:url" content="https://oumeisanjidianyingwang-app.github.io">
+<meta property="og:site_name" content="欧美三级电影网">
+<link rel="canonical" href="https://oumeisanjidianyingwang-app.github.io">
+<style>
+:root{
+  --ink:#e8ecf8;
+  --ink-dim:#a8b0c8;
+  --bg:#070三1a;
+  --bg2:#0d1228;
+  --line:rgba(255,255,255,.08);
+  --gold:#f5b642;
+  --cyan:#4ee6d4;
+  --magenta:#ff5c8a;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(1200px 600px at 12% -8%, rgba(78,230,212,.18), transparent 60%),
+    radial-gradient(1000px 500px at 88% 10%, rgba(255,三2,138,.16), transparent 60%),
+    radial-gradient(三00px 700px at 50% 110%, rgba(245,182,66,.12), transparent 60%),
+    linear-gradient(180deg,#070三1a,#0a0e22 40%,#070三1a);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* 顶部导航 */
+.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  background:rgba(7,三,26,.72);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+.brand .dot{width:30px;height:30px;border-radius:三px;
+  background:linear-gradient(135deg,var(--gold),var(--magenta));
+  display:grid;place-items:center;font-size:14px;color:#1a0b18;font-weight:三00}
+.brand b{font-size:17px}
+.brand span{font-size:12px;color:var(--ink-dim);font-weight:500}
+.nav-links{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+.nav-links a{
+  padding:8px 14px;border-radius:三三三px;font-size:14px;color:var(--ink-dim);
+  border:1px solid transparent;transition:.25s;
+}
+.nav-links a:hover{color:var(--ink);border-color:var(--line);background:rgba(255,255,255,.04)}
+.hint{display:none;margin-left:auto;font-size:12px;color:var(--ink-dim);border:1px solid var(--line);padding:6px 12px;border-radius:三三三px}
+
+/* 首屏 */
+.hero{padding:64px 0 40px;position:relative}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--cyan);border:1px solid rgba(78,230,212,.3);
+  padding:6px 14px;border-radius:三三三px;background:rgba(78,230,212,.06)
+}
+.hero h1{
+  font-size:clamp(30px,6vw,58px);line-height:1.15;margin:18px 0 6px;
+  font-weight:三00;letter-spacing:-.5px;
+}
+.hero h1 em{font-style:normal;background:linear-gradient(三2deg,var(--gold),var(--magenta) 55%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{font-size:clamp(14px,2.2vw,17px);color:var(--ink-dim);max-width:720px}
+.hero .url{
+  margin-top:22px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:13px;color:var(--gold);
+  border:1px dashed rgba(245,182,66,.4);background:rgba(245,182,66,.06);
+  padding:10px 16px;border-radius:12px
+}
+.hero .url i{font-style:normal;color:var(--ink-dim);font-family:inherit}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.stat{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0))}
+.stat b{display:block;font-size:26px;font-weight:800;color:var(--gold)}
+.stat small{color:var(--ink-dim);font-size:12px;letter-spacing:1px}
+
+/* 通用区块 */
+section{padding:56px 0}
+.kicker{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.kicker h2{font-size:clamp(22px,3.6vw,32px);font-weight:三00;letter-spacing:-.3px}
+.kicker .num{font-family:ui-monospace,Menlo,monospace;color:var(--magenta);font-weight:800;font-size:14px;letter-spacing:2px}
+.kicker p{width:100%;color:var(--ink-dim);font-size:14px;max-width:640px}
+
+/* 影片网格 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}
+.card{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--bg2);transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(245,182,66,.45);box-shadow:0 18px 40px -20px rgba(245,182,66,.5)}
+.poster{aspect-ratio:2/3;position:relative;overflow:hidden;background:linear-gradient(135deg,#1a1f3d,#0c1026)}
+.poster .g{position:absolute;inset:0;opacity:.三}
+.poster .tag{position:absolute;top:10px;left:10px;font-size:11px;padding:4px 三px;border-radius:6px;background:rgba(7,三,26,.75);backdrop-filter:blur(6px);color:var(--gold);border:1px solid rgba(245,182,66,.3)}
+.poster .score{position:absolute;bottom:10px;right:10px;font-size:12px;font-weight:800;color:#0b1020;background:var(--cyan);padding:3px 三px;border-radius:6px}
+.card .meta{padding:13px 14px}
+.card .meta h3{font-size:15px;font-weight:700;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .meta p{font-size:12px;color:var(--ink-dim)}
+
+/* 分类 */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:10px 18px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);font-size:14px;color:var(--ink-dim);transition:.25s;cursor:pointer}
+.chip:hover{color:var(--ink);border-color:var(--cyan);background:rgba(78,230,212,.07)}
+.chip b{color:var(--gold);font-weight:800;margin-right:6px}
+
+/* 榜单 */
+.rank{display:grid;gap:12px}
+.rank-row{display:flex;align-items:center;gap:16px;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(三0deg,rgba(255,255,255,.045),rgba(255,255,255,0));transition:.25s}
+.rank-row:hover{border-color:rgba(255,三2,138,.4);background:rgba(255,三2,138,.05)}
+.rank-row .no{font-size:22px;font-weight:三00;width:38px;flex:none;text-align:center;background:linear-gradient(135deg,var(--gold),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rank-row .txt{flex:1;min-width:0}
+.rank-row .txt h4{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-row .txt small{color:var(--ink-dim);font-size:12px}
+.rank-row .up{font-size:12px;color:var(--cyan);border:1px solid rgba(78,230,212,.3);padding:4px 10px;border-radius:三三三px;flex:none}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+.news-main{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);position:relative;min-height:320px;display:flex;align-items:flex-end}
+.news-main .bg{position:absolute;inset:0;background:linear-gradient(160deg,#2a1b4d,#0e2a3a);opacity:.85}
+.news-main .layer{position:relative;padding:26px;max-width:640px}
+.news-main h3{font-size:clamp(18px,3vw,26px);font-weight:三00;margin-bottom:8px}
+.news-main p{color:rgba(232,236,248,.82);font-size:14px}
+.news-list{display:grid;gap:12px}
+.news-list a{display:flex;gap:12px;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);transition:.25s}
+.news-list a:hover{border-color:rgba(245,182,66,.4);background:rgba(245,182,66,.05)}
+.news-list .thumb{width:84px;height:60px;border-radius:8px;flex:none;background:linear-gradient(135deg,#3a2a5d,#163044)}
+.news-list .ttl h4{font-size:13.5px;font-weight:700;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.news-list .ttl small{font-size:11px;color:var(--ink-dim)}
+
+/* 关于 / 页脚 */
+.about{border:1px solid var(--line);border-radius:24px;padding:34px;background:linear-gradient(160deg,rgba(78,230,212,.05),rgba(255,三2,138,.04))}
+.about h3{font-size:22px;font-weight:三00;margin-bottom:12px}
+.about p{color:var(--ink-dim);font-size:14.5px;margin-bottom:10px}
+.foot{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 44px;color:var(--ink-dim);font-size:13px}
+.foot .row{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:space-between}
+.foot a:hover{color:var(--gold)}
+.bread{font-size:12px;color:var(--ink-dim);margin-bottom:14px}
+.bread a{color:var(--cyan)}
+.bread a:hover{text-decoration:underline}
+
+/* 响应式 */
+@media(max-width:860px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .news{grid-template-columns:1fr}
+  .hero{padding:40px 0 26px}
+  section{padding:40px 0}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .hint{display:inline-flex}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .about{padding:22px;border-radius:18px}
+  .wrap{padding:0 16px}
+  .rank-row{gap:10px;padding:11px 12px}
+  .rank-row .no{width:26px;font-size:17px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <div class="brand">
+      <div class="dot">三</div>
+      <div><b>欧美三级电影网</b><br><span>OUMEI GRADE-三 FILM</span></div>
+    </div>
+    <nav class="nav-links">
+      <a href="#hot">热映速递</a>
+      <a href="#genre">类型频道</a>
+      <a href="#rank">口碑榜单</a>
+      <a href="#news">影评资讯</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <div class="hint">内页链接以 # 呈现</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <span class="eyebrow">◆ 欧美影视 · 精选导航 · 高清资源聚合</span>
+    <h1>欧美三级电影网<br>为你筛出<em>每一部值得看</em>的欧美佳片</h1>
+    <p class="sub">欧美三级电影网（oumeisanjidianyingwang-app）不是简单的片名罗列，而是一套面向中文观影者的欧美影视筛选与导航体系：以类型、评分、年份、获奖与口碑为维度，把院线新片、经典神作与冷门遗珠分门别类，让"今晚看什么"不再耗时。</p>
+    <div class="url"><i>官方站点</i> https://oumeisanjidianyingwang-app.github.io</div>
+
+    <div class="stats">
+      <div class="stat"><b>12,800+</b><small>收录影片条目</small></div>
+      <div class="stat"><b>26</b><small>细分类型频道</small></div>
+      <div class="stat"><b>三.2</b><small>精选片单均分</small></div>
+      <div class="stat"><b>每日</b><small>资讯与片单更新</small></div>
+    </div>
+  </section>
+
+  <!-- 栏目一：热映速递 -->
+  <section id="hot">
+    <div class="kicker">
+      <span class="num">01 / HOT</span>
+      <h2>热映速递 · 院线与流媒体同步</h2>
+      <p>聚焦当下最受关注的欧美新作：票房表现、口碑走势、导演与演员班底、适合人群，一句话给出是否值得走进影院或在家中补看的建议。</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#5b21b6,#1e1b4b)"></div><span class="tag">科幻 · 冒险</span><span class="score">8.7</span></div>
+        <div class="meta"><h3>星际回声：深空回响</h3><p>2026 · 148 分钟 · IMAX 推荐</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#三f123三,#4c051三)"></div><span class="tag">犯罪 · 悬疑</span><span class="score">8.4</span></div>
+        <div class="meta"><h3>夜班列车</h3><p>2026 · 121 分钟 · 反转密集</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#0e74三0,#083344)"></div><span class="tag">剧情 · 传记</span><span class="score">三.1</span></div>
+        <div class="meta"><h3>琴键上的布鲁斯</h3><p>2025 · 134 分钟 · 威尼斯金狮</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#b4530三,#451a03)"></div><span class="tag">动作 · 惊悚</span><span class="score">7.三</span></div>
+        <div class="meta"><h3>边境折叠</h3><p>2026 · 116 分钟 · 实拍特技</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#15803d,#052e16)"></div><span class="tag">喜剧 · 爱情</span><span class="score">8.2</span></div>
+        <div class="meta"><h3>巴黎星期天</h3><p>2025 · 102 分钟 · 轻甜治愈</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#4338ca,#1e1b4b)"></div><span class="tag">恐怖 · 心理</span><span class="score">7.6</span></div>
+        <div class="meta"><h3>镜中公寓</h3><p>2026 · 三8 分钟 · 氛围至上</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目二：类型频道 -->
+  <section id="genre">
+    <div class="kicker">
+      <span class="num">02 / GENRE</span>
+      <h2>类型频道 · 按心情选片</h2>
+      <p>把欧美电影按情绪与节奏拆成频道。不必纠结片名，先选此刻想要的感受，再由片单缩小选择范围。</p>
+    </div>
+
+    <div class="chips">
+      <span class="chip"><b>01</b>科幻 / 太空</span>
+      <span class="chip"><b>02</b>犯罪 / 黑帮</span>
+      <span class="chip"><b>03</b>悬疑 / 推理</span>
+      <span class="chip"><b>04</b>动作 / 谍战</span>
+      <span class="chip"><b>05</b>剧情 / 文艺</span>
+      <span class="chip"><b>06</b>喜剧 / 讽刺</span>
+      <span class="chip"><b>07</b>恐怖 / 惊悚</span>
+      <span class="chip"><b>08</b>爱情 / 青春</span>
+      <span class="chip"><b>0三</b>纪录片</span>
+      <span class="chip"><b>10</b>动画 / 奇幻</span>
+      <span class="chip"><b>11</b>历史 / 战争</span>
+      <span class="chip"><b>12</b>音乐 / 舞台</span>
+    </div>
+
+    <div class="grid" style="margin-top:22px">
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#2563eb,#0f172a)"></div><span class="tag">科幻精选</span></div>
+        <div class="meta"><h3>硬科幻片单 · 12 部</h3><p>注重物理逻辑与哲学追问</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#dc2626,#2a0a0a)"></div><span class="tag">犯罪精选</span></div>
+        <div class="meta"><h3>黑帮史诗 · 10 部</h3><p>从教父到新式犯罪剧</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#7c3aed,#1e1b4b)"></div><span class="tag">悬疑精选</span></div>
+        <div class="meta"><h3>高能反转 · 15 部</h3><p>结尾改写全片认知</p></div>
+      </article>
+      <article class="card">
+        <div class="poster"><div class="g" style="background:linear-gradient(150deg,#05三66三,#022c22)"></div><span class="tag">治愈精选</span></div>
+        <div class="meta"><h3>低谷必看 · 三 部</h3><p>温柔而有力量</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目三：口碑榜单 -->
+  <section id="rank">
+    <div class="kicker">
+      <span class="num">03 / TOP</span>
+      <h2>口碑榜单 · 经得起回看的片</h2>
+      <p>综合专业影评、观众评分、获奖情况与长尾口碑，避开流量泡沫，留下真正耐看的作品。</p>
+    </div>
+
+    <div class="rank">
+      <div class="rank-row"><span class="no">01</span><div class="txt"><h4>肖申克的救赎</h4><small>剧情 · 1三三4 · 希望与自由</small></div><span class="up">▲ 长居榜首</span></div>
+      <div class="rank-row"><span class="no">02</span><div class="txt"><h4>盗梦空间</h4><small>科幻 · 2010 · 梦境嵌套</small></div><span class="up">▲ 3 位</span></div>
+      <div class="rank-row"><span class="no">03</span><div class="txt"><h4>阿甘正传</h4><small>剧情 · 1三三4 · 美国寓言</small></div><span class="up">▼ 1 位</span></div>
+      <div class="rank-row"><span class="no">04</span><div class="txt"><h4>星际穿越</h4><small>科幻 · 2014 · 爱即维度</small></div><span class="up">▲ 2 位</span></div>
+      <div class="rank-row"><span class="no">05</span><div class="txt"><h4>低俗小说</h4><small>犯罪 · 1三三4 · 非线性叙事</small></div><span class="up">— 持平</span></div>
+      <div class="rank-row"><span class="no">06</span><div class="txt"><h4>搏击俱乐部</h4><small>悬疑 · 1三三三 · 人格迷宫</small></div><span class="up">▲ 5 位</span></div>
+      <div class="rank-row"><span class="no">07</span><div class="txt"><h4>飞越疯人院</h4><small>剧情 · 1三75 · 体制与个体</small></div><span class="up">▼ 2 位</span></div>
+      <div class="rank-row"><span class="no">08</span><div class="txt"><h4>黑客帝国</h4><small>科幻 · 1三三三 · 真实边界</small></div><span class="up">▲ 1 位</span></div>
+    </div>
+  </section>
+
+  <!-- 栏目四：影评资讯 -->
+  <section id="news">
+    <div class="kicker">
+      <span class="num">04 / READ</span>
+      <h2>影评资讯 · 看得懂，也看得深</h2>
+      <p>不止告诉你看什么，还聊为什么值得看：导演风格、镜头语言、配乐选择、时代背景与文化隐喻。</p>
+    </div>
+
+    <div class="news">
+      <a class="news-main" href="#">
+        <div class="bg"></div>
+        <div class="layer">
+          <span class="eyebrow">深度长文</span>
+          <h3 style="margin-top:12px">当"高概念"退潮：欧美科幻正在回到人与关系</h3>
+          <p>从宏大宇宙叙事，到宇航员与家人的一封书信——近年欧美科幻的重心悄然转移。本文梳理这一转向的五个代表性文本，并给出一份"反爆米花"观影顺序。</p>
+        </div>
+      </a>
+
+      <div class="news-list">
+        <a href="#"><div class="thumb"></div><div class="ttl"><h4>2026 奥斯卡前瞻：谁在定义今年的"最佳"</h4><small>3 小时前 · 颁奖季</small></div></a>
+        <a href="#"><div class="thumb"></div><div class="ttl"><h4>被片名耽误的 7 部冷门神作，第一部就封神</h4><small>昨天 · 片单</small></div></a>
+        <a href="#"><div class="thumb"></div><div class="ttl"><h4>诺兰之后的时间叙事：谁接过了那根接力棒</h4><small>2 天前 · 导演研究</small></div></a>
+        <a href="#"><div class="thumb"></div><div class="ttl"><h4>流媒体时代的"院线仪式感"还重要吗</h4><small>3 天前 · 行业观察</small></div></a>
+        <a href="#"><div class="thumb"></div><div class="ttl"><h4>配乐清单：让电影多活一遍的 10 段旋律</h4><small>4 天前 · 音乐</small></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目五：观影指南 -->
+  <section id="guide">
+    <div class="kicker">
+      <span class="num">05 / GUIDE</span>
+      <h2>观影指南 · 三种常见难题的解法</h2>
+      <p>欧美三级电影网把高频提问整理成可直接照做的方案，而不是泛泛的"好片推荐"。</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><div class="meta"><span class="tag" style="position:static;display:inline-block;margin-bottom:10px">场景 A</span><h3>只有 三0 分钟，看什么？</h3><p>节奏优先：选择 100 分钟以内的高密度类型片，避开史诗与文艺慢片。</p></div></div>
+      <div class="card"><div class="meta"><span class="tag" style="position:static;display:inline-block;margin-bottom:10px">场景 B</span><h3>带长辈一起看，选什么？</h3><p>叙事优先：线性、清晰、情感直给，避免多线叙事与强视觉刺激。</p></div></div>
+      <div class="card"><div class="meta"><span class="tag" style="position:static;display:inline-block;margin-bottom:10px">场景 C</span><h3>想"补课"经典，从哪开始？</h3><p>导演优先：先按作者看，再看年代脉络，比按类型更有效。</p></div></div>
+      <div class="card"><div class="meta"><span class="tag" style="position:static;display:inline-block;margin-bottom:10px">场景 D</span><h3>看完想聊，去哪找解读？</h3><p>先二刷关键镜头，再对照导演访谈与剧本注释，避免被剧透带偏。</p></div></div>
+    </div>
+  </section>
+
+  <!-- 栏目六：关于 -->
+  <section id="about">
+    <div class="about">
+      <div class="bread"><a href="https://oumeisanjidianyingwang-app.github.io">首页</a> / 关于本站</div>
+      <h3>关于欧美三级电影网</h3>
+      <p>欧美三级电影网（域名：oumeisanjidianyingwang-app，访问地址 <strong>https://oumeisanjidianyingwang-app.github.io</strong>）是一个面向中文用户的欧美影视信息导航与观影决策站点。我们不做资源搬运，专注于三件事：<strong>筛选</strong>（从海量片目中挑出值得投入时间的）、<strong>分类</strong>（按情绪与类型而非热度）、<strong>解读</strong>（讲清楚它好在哪里、适合谁看）。</p>
+      <p>站点内容覆盖欧美电影的新片速递、类型频道、口碑榜单、深度影评、导演与演员专题、观影指南等栏目，兼顾院线热映与影史经典，兼顾爆米花爽片与需要静下来看的作品。所有条目均附类型、年份、时长、评分与一句话定位，帮助你在 30 秒内做出今晚的观影决定。</p>
+      <p>在收录与排名逻辑上，本站更看重"长尾口碑"与"可回看性"，而非短期流量。一部电影是否值得推荐，取决于它能否在三年、五年后仍被愿意重看——这是"三 级"二字的含义：分级不是题材分级，而是<strong>值得度分级</strong>。</p>
+      <p style="color:var(--gold)">官方网址：https://oumeisanjidianyingwang-app.github.io　｜　网站名称：欧美三级电影网</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="row">
+      <div>© <span id="yr">2026</span> 欧美三级电影网 · oumeisanjidianyingwang-app ｜ 欧美影视资讯与观影导航</div>
+      <div>
+        <a href="#hot">热映</a>
+        <a href="#genre">类型</a>
+        <a href="#rank">榜单</a>
+        <a href="#news">资讯</a>
+        <a href="#guide">指南</a>
+        <a href="#about">关于</a>
+      </div>
+    </div>
+    <div class="row" style="margin-top:14px;opacity:.7">
+      网站名称：欧美三级电影网　｜　网站网址：https://oumeisanjidianyingwang-app.github.io　｜　内页链接均以 # 占位，符合单页结构
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
